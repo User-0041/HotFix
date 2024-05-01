@@ -29,7 +29,7 @@ public class VoitureController<Voiture> {
     @GetMapping
     public ResponseEntity<List<Voiture>> getAllVoitures() {
   
-        List<Voiture> Voitures = (List<Voiture>) VoitureService.getAllVoitures();
+        List<Voiture> Voitures = (List<Voiture>) VoitureService.getAllVoiture();
         return new ResponseEntity<>(Voitures, HttpStatus.OK);
     }
 
